@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 require('mongoose-currency').loadType(mongoose);
 const Currency = mongoose.Types.Currency;
 
+// comment schema
 const commentSchema = new Schema({
     rating: {
         type: Number,
@@ -22,6 +23,8 @@ const commentSchema = new Schema({
     timestamps: true
 });
 
+
+//campsite schema
 const campsiteSchema = new Schema({
     name: {
         type: String,
@@ -49,7 +52,7 @@ const campsiteSchema = new Schema({
         type: Boolean,
         default: false
     },
-    comments: [commentSchema]
+    comments: [commentSchema] // Placing comments schema in a subfolder
 }, {
     timestamps: true
 });
