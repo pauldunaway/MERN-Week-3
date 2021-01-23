@@ -1,4 +1,5 @@
-node_modules,
-index.html,
+node_modules
+index.html
 config.js
-anything
+server.cert
+
